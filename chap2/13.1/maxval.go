@@ -9,6 +9,7 @@ func main() {
 }
 
 func maxval(i []int) (max int) {
+	max = i[0] //Important when the slice contains all negative values
 	for _, x := range i {
 		if x > max {
 			max = x
